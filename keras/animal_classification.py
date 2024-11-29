@@ -19,9 +19,9 @@ TRANSLATE = {
 def get_data_generators(directory, target_size=(224, 224), batch_size=32, validation_split=0.15):
     """Create training and validation data generators with augmentation."""
     datagen = ImageDataGenerator(
-        rescale=1/255.,
-        zoom_range=0.2,
-        horizontal_flip=True,
+        rescale=1/255., # Normalize pixel values
+        # zoom_range=0.2,
+        # horizontal_flip=True,
         validation_split=validation_split
     )
     
