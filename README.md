@@ -7,7 +7,7 @@
 
   <p align="center">
     The implementation of 3 different CNN models for the use of animal classification. Trying to figure out which
-    model does the best at predicting the animal type based on the image using a dataset we got from kaggle for training and testing.
+    model does the best at predicting the animal type based on the image using a dataset we got from kaggle for training and validation.
     <br />
     <a href="https://github.com/kayleeodom/CIS377-Animal-Classification"><strong>Explore the docs »</strong></a>
     <br />
@@ -46,7 +46,6 @@
     <li><a href="#Results">Results</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -87,7 +86,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/AveryH6/CIS377-Animal-Classification.git
    ```
 2. Set up a Python Virtual Environment
    ```sh
@@ -132,14 +131,14 @@ This is an example of how to list things you need to use the software and how to
 <!-- Data -->
 ## Data
 
-<p>The dataset used in this project is Animals-10, an image dataset that consists of about 28k medium quality animal images. They are seperated into folders, one for each category, with an image count varing from 2k to 5k units. there are different categories: dog, horse, spider, elephant, butterfly, chicken, cat, cow, sheep, and squirrel. These images have been collected from "google images" and checked by humans. The dataset was initially collected in italian so it does contain a translate file. </p>
+<p>The dataset used in this project is Animals-10, an image dataset that consists of about 28k medium quality animal images. They are seperated into folders, one for each category, with an image count varing from 2k to 5k units. There are different categories: dog, horse, spider, elephant, butterfly, chicken, cat, cow, sheep, and squirrel. These images have been collected from "google images" and checked by humans. The dataset was initially collected in italian so it does contain a translate file. </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Model -->
 ## Model
 
-<p>For this project our main focus wasn't about improving one model to be able to classify the species but look into which CNN model was the most effective. All three of the models we used for this project are Convolutional Neural Networks that were pre-trained on the ImageNet dataset. The first model we used was the VGG16 model. For this we used a predesigned one from huggingface. The second model we used was an InceptionV3 model through keras. The third model we used a ResNet50 model through keras </p>
+<p>For this project our main focus wasn't about improving one model to be able to classify the species but look into which CNN (image classification) model was the most effective. All three of the models we used for this project are Convolutional Neural Networks that were pre-trained on the ImageNet dataset. The three models we focused on were VGG-16, ResNet50, and InceptionV3, and all wre loaded in with the Keras API. Keras is a python-based, open source API for deep learning that is used to create and test neural netowrks. </p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -182,18 +181,6 @@ Don't forget to give the project a star! Thanks again!
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-* []()
-* []()
-* []()
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
