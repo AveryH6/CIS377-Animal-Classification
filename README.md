@@ -164,10 +164,15 @@ In the Keras Final folder, you can see the models evaluated on the dataset witho
 ## Results
 
 <p>Keras Folder Results</p>
-
+![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
+![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
+![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
 
 
 <p>Image-Augmentation Folder Results</p>
+![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
+![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
+![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
