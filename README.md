@@ -6,8 +6,7 @@
 <h3 align="center">Animal Species Predictor</h3>
 
   <p align="center">
-    The implementation of 3 different CNN models for the use of animal classification. Trying to figure out which
-    model does the best at predicting the animal type based on the image using a dataset we got from kaggle for training and validation.
+    This project involves the implementation of three different CNN models for animal classification. The goal is to determine which model performs best at predicting the animal type based on an image, using a dataset obtained from Kaggle for training and validation. In addition to testing various models, we also explore the use of image augmentation to assess its impact on the results.
     <br />
     <a href="https://github.com/kayleeodom/CIS377-Animal-Classification"><strong>Explore the docs »</strong></a>
     <br />
@@ -71,7 +70,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
@@ -87,6 +85,7 @@ This is an example of how to list things you need to use the software and how to
 1. Clone the repo
    ```sh
    git clone https://github.com/AveryH6/CIS377-Animal-Classification.git
+   cd loan
    ```
 2. Set up a Python Virtual Environment
    ```sh
@@ -99,9 +98,19 @@ This is an example of how to list things you need to use the software and how to
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_name
+   git remote set-url origin github_username/repo_n
    git remote -v # confirm the changes
    ```
+
+Dependencies
+- scikit-learn
+- seaborn
+- matplotlib
+- numpy
+- transformer
+- pandas
+- Python 3.10+
+- tensorflow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,33 +121,38 @@ This is an example of how to list things you need to use the software and how to
 ### Running the Model
 <p>This section describes how to train, evaluate, or use the model.</p>
 
-1. Training the model: To train the model, run the following command:
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Set up a Python Virtual Environment
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-   ```
-3. Install Dependencies
-   ```js
-     pip install -r requirements.txt
-   ```
+<p>Each model can be ran from their respective Jupyter notebooks. You can use the Jupyter Extension in VS Code to run and manage notebooks directly within the editor.</p>
+
+1. Install the Jupyter Extension
+   Go to the Extensions view
+   Search for "Jupyter" and install the extension
+3. Open a notebook
+   Open any .ipynb file in teh editor, and the Jupyter environment will load automatically
+4. Run Cells within VS Code
+   You can execute notebook cells directly in the editor using the "Run Cell" button or keyboard shortcuts
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- Data -->
-## Data
+## Dataset
+
+The dataset used for training and validation checks of the model is available in csv/raw-img.
 
 <p>The dataset used in this project is Animals-10, an image dataset that consists of about 28k medium quality animal images. They are seperated into folders, one for each category, with an image count varing from 2k to 5k units. There are different categories: dog, horse, spider, elephant, butterfly, chicken, cat, cow, sheep, and squirrel. These images have been collected from "google images" and checked by humans. The dataset was initially collected in italian so it does contain a translate file. </p>
+
+Load the dataset: Run this file
+   ```sh
+   python animal-classification.py
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- Model -->
 ## Model
 
-<p>For this project our main focus wasn't about improving one model to be able to classify the species but look into which CNN (image classification) model was the most effective. All three of the models we used for this project are Convolutional Neural Networks that were pre-trained on the ImageNet dataset. The three models we focused on were VGG-16, ResNet50, and InceptionV3, and all wre loaded in with the Keras API. Keras is a python-based, open source API for deep learning that is used to create and test neural netowrks. </p>
+<p>For this project our main focus wasn't about improving one model to be able to classify the species but look into which CNN (image classification) model was the most effective. All three of the models we used for this project are Convolutional Neural Networks that were pre-trained on the ImageNet dataset. The three models we focused on were VGG-16, ResNet50, and InceptionV3, and all wre loaded in with the Keras API. Keras is a python-based, open source API for deep learning that is used to create and test neural netowrks. Each model is in its own jupyter notebook where it was trained and evaluated on the animal-10 dataset. After training the model we display training and validation metrics in a line graph. Then we run a test to see how the model is performing accross different classes in the validation dataset, and display the results with a confusion matrix.  </p>
+
+Train: Refer to the usuage section
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +160,9 @@ This is an example of how to list things you need to use the software and how to
 <!-- Evaluation -->
 ## Evaluation
 
-<p>The model's performance was evaluated using accuracy, precision, and recall metrics. To get an idea on which model performed the best we tried to keep some similarities and one of those was the amount of epochs the model was trained for. To save time, but also give it some time to run we setteled on 5 epochs.</p>
+<p>The model's performance was evaluated using accuracy, precision, loss, and recall metrics. To determine which model performed the best, we tried to maintain some consistency, one of which was the number of epochs the models were trained for. To save time while allowing sufficient training, we settled on 5 epochs.
+
+In the Keras Final folder, you can see the models evaluated on the dataset without any adjustments. In the Image Augmentation folder, the models were evaluated on a dataset that included some image augmentation.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -154,7 +170,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- Results -->
 ## Results
 
-<p>After training for 5 epochs, the (best model) achived a test accuracy of . This indicates that the model is capable of reliably classifying animal images into the correct categories.</p>
+<p>Put something about results.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +180,6 @@ This is an example of how to list things you need to use the software and how to
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
