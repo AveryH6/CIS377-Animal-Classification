@@ -8,7 +8,7 @@
   <p align="center">
     This project involves the implementation of three different CNN models for animal classification. The goal is to determine which model performs best at predicting the animal type based on an image, using a dataset obtained from Kaggle for training and validation. In addition to testing various models, we also explore the use of image augmentation to assess its impact on the results.
     <br />
-    <a href="https://github.com/kayleeodom/CIS377-Animal-Classification"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/kayleeodom/CIS377-Animal-Classification">
     <br />
     <br />
 <!--     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -98,19 +98,19 @@ This is an example of how to list things you need to use the software and how to
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_n
+   git remote set-url origin github_username/repo_name
    git remote -v # confirm the changes
    ```
 
 Dependencies
-- scikit-learn
-- seaborn
-- matplotlib
-- numpy
-- transformer
-- pandas
-- Python 3.10+
-- tensorflow
+* scikit-learn
+* seaborn
+* matplotlib
+* numpy
+* transformer
+* pandas
+* Python 3.10+
+* tensorflow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,15 +119,13 @@ Dependencies
 <!-- USAGE EXAMPLES -->
 ## Usuage
 ### Running the Model
-<p>This section describes how to train, evaluate, or use the model.</p>
-
-<p>Each model can be ran from their respective Jupyter notebooks. You can use the Jupyter Extension in VS Code to run and manage notebooks directly within the editor.</p>
+<p>This section describes how to train, evaluate, or use the model.</p> <p>Each model can be run from its respective Jupyter notebook. You can use the Jupyter Extension in VS Code to run and manage notebooks directly within the editor.</p> <p>There is a folder titled `keras` which contains a notebook for each model, where it trains and evaluates on the dataset without any image augmentation. The "image augmentation" folder contains a notebook for each model, where it trains and evaluates its metrics on the dataset with image augmentation.</p>
 
 1. Install the Jupyter Extension
    Go to the Extensions view
    Search for "Jupyter" and install the extension
 3. Open a notebook
-   Open any .ipynb file in teh editor, and the Jupyter environment will load automatically
+   Open any .ipynb file in the editor, and the Jupyter environment will load automatically
 4. Run Cells within VS Code
    You can execute notebook cells directly in the editor using the "Run Cell" button or keyboard shortcuts
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,7 +136,7 @@ Dependencies
 
 The dataset used for training and validation checks of the model is available in csv/raw-img.
 
-<p>The dataset used in this project is Animals-10, an image dataset that consists of about 28k medium quality animal images. They are seperated into folders, one for each category, with an image count varing from 2k to 5k units. There are different categories: dog, horse, spider, elephant, butterfly, chicken, cat, cow, sheep, and squirrel. These images have been collected from "google images" and checked by humans. The dataset was initially collected in italian so it does contain a translate file. </p>
+<p>The dataset used in this project is Animals-10, an image dataset that consists of about 28k medium quality animal images. They are separated into folders, one for each category, with an image count varying from 2k to 5k units. There are different categories: dog, horse, spider, elephant, butterfly, chicken, cat, cow, sheep, and squirrel. These images have been collected from "google images" and checked by humans. The dataset was initially collected in Italian and includes a translation file. </p>
 
 Load the dataset: Run this file
    ```sh
@@ -150,7 +148,7 @@ Load the dataset: Run this file
 <!-- Model -->
 ## Model
 
-<p>For this project our main focus wasn't about improving one model to be able to classify the species but look into which CNN (image classification) model was the most effective. All three of the models we used for this project are Convolutional Neural Networks that were pre-trained on the ImageNet dataset. The three models we focused on were VGG-16, ResNet50, and InceptionV3, and all wre loaded in with the Keras API. Keras is a python-based, open source API for deep learning that is used to create and test neural netowrks. Each model is in its own jupyter notebook where it was trained and evaluated on the animal-10 dataset. After training the model we display training and validation metrics in a line graph. Then we run a test to see how the model is performing accross different classes in the validation dataset, and display the results with a confusion matrix.  </p>
+<p>For this project, our main focus was not on improving one model to classify the species, but rather on determining which CNN (image classification) model was the most effective. All three models used in this project are Convolutional Neural Networks pre-trained on the ImageNet dataset. The three models we focused on were VGG-16, ResNet50, and InceptionV3, all of which were loaded using the Keras API. Keras is a Python-based, open-source API for deep learning that is used to create and test neural networks. Each model is housed in its own Jupyter notebook, where it was trained and evaluated on the Animal-10 dataset. After training the model, we display the training and validation metrics in a line graph. We then run a test to evaluate the model’s performance across different classes in the validation dataset and display the results using a confusion matrix.</p>
 
 Train: Refer to the usuage section
 
@@ -160,7 +158,7 @@ Train: Refer to the usuage section
 <!-- Evaluation -->
 ## Evaluation
 
-<p>The model's performance was evaluated using accuracy, precision, loss, and recall metrics. To determine which model performed the best, we tried to maintain some consistency, one of which was the number of epochs the models were trained for. To save time while allowing sufficient training, we settled on 5 epochs.
+<p>The model's performance was evaluated using accuracy, precision, loss, and recall metrics. To determine which model performed the best, we tried to maintain consistency. One such measure was the number of epochs the models were trained for. To save time while allowing sufficient training, we settled on 5 epochs.
 
 In the Keras Final folder, you can see the models evaluated on the dataset without any adjustments. In the Image Augmentation folder, the models were evaluated on a dataset that included some image augmentation.</p>
 
