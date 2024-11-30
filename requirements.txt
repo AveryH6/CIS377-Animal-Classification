@@ -1,12 +1,8 @@
 transformers==4.24.0
-timm==0.6.13 # conda install -c conda-forge timm
 numpy==1.26.4
 scikit-learn==1.4.2
 seaborn==0.13.2
 matplotlib==3.9.2
 pandas==2.2.2
 python==3.10.13
-pytorch==2.3.1
 tensorflow==2.10.0
-torchvision==0.18.1
-torch==2.3.1 # had to install with pip instead of conda
