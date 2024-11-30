@@ -81,7 +81,7 @@ This is an example of how to list things you need to use the software and how to
 1. Clone the repo
    ```sh
    git clone https://github.com/AveryH6/CIS377-Animal-Classification.git
-   cd loan
+   cd CIS377-Animal-Classification
    ```
 2. Set up a Python Virtual Environment
    ```sh
@@ -94,7 +94,7 @@ This is an example of how to list things you need to use the software and how to
    ```
 5. Change git remote url to avoid accidental pushes to base project
    ```sh
-   git remote set-url origin github_username/repo_name
+   git remote set-url origin AveryH6/CIS377-Animal-Classification
    git remote -v # confirm the changes
    ```
 
@@ -109,7 +109,6 @@ Dependencies
 * tensorflow
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
@@ -164,7 +163,11 @@ In the Keras Final folder, you can see the models evaluated on the dataset witho
 <!-- Results -->
 ## Results
 
-<p>Put something about results.</p>
+<p>Keras Folder Results</p>
+
+
+
+<p>Image-Augmentation Folder Results</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
