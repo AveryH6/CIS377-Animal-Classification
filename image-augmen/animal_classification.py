@@ -20,11 +20,11 @@ def get_data_generators(directory, target_size=(224, 224), batch_size=32, valida
     """Create training and validation data generators with augmentation."""
     datagen = ImageDataGenerator(
         rescale=1/255.,
-        rotation_range=30,
-        zoom_range=0.2,
-        horizontal_flip=True,
-        width_shift_range=0.2,
-        height_shift_range=0.2,
+        rotation_range=30, # random rotation of images
+        zoom_range=0.2, # random zoom in/out on images
+        horizontal_flip=True, # random flip of images horizontally
+        width_shift_range=0.2, # random shift of images horizontally of the width
+        height_shift_range=0.2, # random shift of images vertically of the height
         validation_split=validation_split
     )
     
