@@ -53,10 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following:`CIS477-Animal-Classification`, `Animal Species Predictor`, `project_description`
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -64,7 +61,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 * Visual Studio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
