@@ -164,28 +164,28 @@ In the Keras Final folder, you can see the models evaluated on the dataset witho
 ![inception-keras-graph](https://github.com/user-attachments/assets/d3a85c7b-7f59-4866-b048-8ae64c4bf1b7)
 
 
-<p>Keras Folder Results</p>
-<h2>Training and Validation Metric Graphs /h2>
+<h2>Keras Folder Results</h2>
+<h3>Training and Validation Metric Graphs /h3>
   
 ![inception-keras-graph](https://github.com/user-attachments/assets/d3a85c7b-7f59-4866-b048-8ae64c4bf1b7)
 ![resnet-keras-graph](https://github.com/user-attachments/assets/cbb2629a-84ce-4826-b6a0-6be4cc987da8)
 ![vgg-keras-graph](https://github.com/user-attachments/assets/cc5a8478-ad16-4df0-b1bc-33e918dad6ba)
 
-<h2>Confusion Matrix</h2>
+<h3>Confusion Matrix</h3>
 
 ![inception-confusion](https://github.com/user-attachments/assets/bb5a1ca2-236d-4b85-9b2e-e815ec9ba9c0)
 ![resnet-confusion](https://github.com/user-attachments/assets/857e0eec-1260-4636-b42a-c9d005ffc0eb)
 ![vgg-confusion](https://github.com/user-attachments/assets/a3088c03-290e-49f2-afa4-946a37b7274e)
 
 
-<p>Image-Augmentation Folder Results</p>
-<h2>Training and Validation Metric Graphs</h2>
+<h2>Image-Augmentation Folder Results</h2>
+<h3>Training and Validation Metric Graphs</h3>
 
 ![inception-ig-graph](https://github.com/user-attachments/assets/5fa35d70-ee05-4926-b5e1-d45572daf3ac)
 ![resnet-ia-graph](https://github.com/user-attachments/assets/6859a2fd-7af2-4f95-ba9d-305337f4e97f)
 ![vgg-ia-graph](https://github.com/user-attachments/assets/c55a2137-09ea-4801-83a2-94ca7ef43348)
 
-<h2>Confusion Matrix</h2>
+<h3>Confusion Matrix</h3>
 
 ![inception-ia-confusion](https://github.com/user-attachments/assets/516e2b98-5d71-482d-b564-6dd619762dd0)
 ![resnet-ia-confusion](https://github.com/user-attachments/assets/2accdbd6-6d94-4470-9406-067773a88b35)
