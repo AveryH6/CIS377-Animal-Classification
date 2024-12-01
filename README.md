@@ -159,21 +159,41 @@ In the Keras Final folder, you can see the models evaluated on the dataset witho
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 <!-- Results -->
 ## Results
+![inception-keras-graph](https://github.com/user-attachments/assets/d3a85c7b-7f59-4866-b048-8ae64c4bf1b7)
+
 
 <p>Keras Folder Results</p>
-![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
-![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
-![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
+<h2>Training and Validation Metric Graphs /h2>
+  
+![inception-keras-graph](https://github.com/user-attachments/assets/d3a85c7b-7f59-4866-b048-8ae64c4bf1b7)
+![resnet-keras-graph](https://github.com/user-attachments/assets/cbb2629a-84ce-4826-b6a0-6be4cc987da8)
+![vgg-keras-graph](https://github.com/user-attachments/assets/cc5a8478-ad16-4df0-b1bc-33e918dad6ba)
+
+<h2>Confusion Matrix</h2>
+
+![inception-confusion](https://github.com/user-attachments/assets/bb5a1ca2-236d-4b85-9b2e-e815ec9ba9c0)
+![resnet-confusion](https://github.com/user-attachments/assets/857e0eec-1260-4636-b42a-c9d005ffc0eb)
+![vgg-confusion](https://github.com/user-attachments/assets/a3088c03-290e-49f2-afa4-946a37b7274e)
 
 
 <p>Image-Augmentation Folder Results</p>
-![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
-![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
-![InceptionV3 Training and validation Metrics](graphs/inception-keras-graph.png)
+<h2>Training and Validation Metric Graphs</h2>
 
+![inception-ig-graph](https://github.com/user-attachments/assets/5fa35d70-ee05-4926-b5e1-d45572daf3ac)
+![resnet-ia-graph](https://github.com/user-attachments/assets/6859a2fd-7af2-4f95-ba9d-305337f4e97f)
+![vgg-ia-graph](https://github.com/user-attachments/assets/c55a2137-09ea-4801-83a2-94ca7ef43348)
+
+<h2>Confusion Matrix</h2>
+
+![inception-ia-confusion](https://github.com/user-attachments/assets/516e2b98-5d71-482d-b564-6dd619762dd0)
+![resnet-ia-confusion](https://github.com/user-attachments/assets/2accdbd6-6d94-4470-9406-067773a88b35)
+![vgg-ia-confusion](https://github.com/user-attachments/assets/c20af165-a64a-4b61-b1df-560ddf87ef03)
+
+<pBy examining these graphs, we can get an idea of which model was the most effective at classifying the animals in this dataset. In addition to looking at the graphs, after you train each model, you will see the loss, accuracy, and precision of each epoch.
+
+After examining the results in just the Keras folder (no image augmentation), we see that the InceptionV3 model performed the best and the ResNet model performed the worst. You can also see a similar outcome in the image-augmentation folder. I think this outcome is due to the architectural and design differences between the models and the type of dataset it's being used for.p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
