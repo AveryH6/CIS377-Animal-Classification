@@ -191,9 +191,9 @@ In the Keras Final folder, you can see the models evaluated on the dataset witho
 ![resnet-ia-confusion](https://github.com/user-attachments/assets/2accdbd6-6d94-4470-9406-067773a88b35)
 ![vgg-ia-confusion](https://github.com/user-attachments/assets/c20af165-a64a-4b61-b1df-560ddf87ef03)
 
-<pBy examining these graphs, we can get an idea of which model was the most effective at classifying the animals in this dataset. In addition to looking at the graphs, after you train each model, you will see the loss, accuracy, and precision of each epoch.
+<p>By examining these graphs, we can get an idea of which model was the most effective at classifying the animals in this dataset. In addition to looking at the graphs, after you train each model, you will see the loss, accuracy, and precision of each epoch.
 
-After examining the results in just the Keras folder (no image augmentation), we see that the InceptionV3 model performed the best and the ResNet model performed the worst. You can also see a similar outcome in the image-augmentation folder. I think this outcome is due to the architectural and design differences between the models and the type of dataset it's being used for.p>
+After examining the results in just the Keras folder (no image augmentation), we see that the InceptionV3 model performed the best and the ResNet model performed the worst. You can also see a similar outcome in the image-augmentation folder. I think this outcome is due to the architectural and design differences between the models and the type of dataset it's being used for.</p>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
